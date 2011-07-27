@@ -1,0 +1,12 @@
+src_dir: game/javascripts
+
+src_files:
+  - game/javascripts/game.js
+
+spec_dir: spec/javascripts
+
+spec_files:
+  - **/*_spec.js
+  
+stylesheets:
+helpers:
