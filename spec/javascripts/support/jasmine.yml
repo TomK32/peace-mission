@@ -1,7 +1,7 @@
-src_dir: game/javascripts
+src_dir:
 
 src_files:
-  - game/javascripts/game.js
+  - game/javascripts/*.js
 
 spec_dir: spec/javascripts
 
