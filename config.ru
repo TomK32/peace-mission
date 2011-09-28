@@ -14,6 +14,7 @@ assets = Sprockets::Environment.new(project_root) do |env|
   env.logger = Logger.new(STDOUT)
 end
 assets.append_path 'game/javascripts'
+assets.append_path 'game/stylesheets'
 assets.append_path 'lib/javascripts'
 
 map '/assets' do
