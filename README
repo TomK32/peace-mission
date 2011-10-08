@@ -2,10 +2,8 @@ Peace mission is a political game where the player is sent out to keep peace bet
 in a recently pacified country.
 
 
-
-== Helpful resources
-* https://gist.github.com/673967 guard, jasmine, coffeescript setup
-
+== Development ==
+Run `rackup` to start the game server and `rake jasmine` for the test server.
 
 (C) Copyright 2011 by Thomas R. Koll, <info@ananasblau.com>
 This software is not open source but you are allowed to read the source code and learn from it.

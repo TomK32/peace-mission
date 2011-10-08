@@ -1,12 +1,11 @@
-src_dir:
-
+src_dir: game
 src_files:
-  - game/javascripts/*.js
+  - javascripts/peacemission.js.coffee
 
 spec_dir: spec/javascripts
 
 spec_files:
-  - **/*_spec.js
-  
+  - **/*_spec.*
+
 stylesheets:
 helpers:

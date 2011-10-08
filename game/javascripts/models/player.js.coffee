@@ -1,0 +1,1 @@
+class window.Peacemission.Models.Player extends window.Peacemission.Models.Actor

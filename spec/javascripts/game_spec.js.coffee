@@ -1,6 +1,6 @@
 describe "Game", ->
   beforeEach ->
-    @game = new Game()
+    @game = new Peacemission.Models.Game()
   it "should have player", ->
     expect(@game.player).toBeDefined()
   it "should have actors", ->
