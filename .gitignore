@@ -1,1 +1,2 @@
 spec/javascripts/*js
+.DS_Store

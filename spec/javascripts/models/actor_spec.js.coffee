@@ -10,6 +10,3 @@ describe "Actor", ->
   describe "relations", ->
     it "should have", ->
       expect(@actor.relations).toBeDefined()
-
-
-

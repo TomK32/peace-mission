@@ -1,11 +1,12 @@
 class window.Peacemission.Models.Game extends Backbone.Model
   defaults:
     version: '0'
-    players: []
 
-  initialize: ->
+  initialize: (options) ->
     @actors = new Peacemission.Collections.Actors
-    @player = null
+    @player = new Peacemission.Models.Player
+    @issues = new Peacemission.Collections.Issues
+    @view = options.view
 
   create_actor: (args) ->
     actor = new Peacemission.Models.Actor(args)

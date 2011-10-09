@@ -6,7 +6,7 @@ class Peacemission.Views.Game.Start extends Backbone.View
   events:
     "click #start": "start"
 
-  initialize: () ->
+  initialize: ->
     @.render()
 
   render: ->
@@ -14,10 +14,8 @@ class Peacemission.Views.Game.Start extends Backbone.View
     @
 
   start: () ->
-    $(@.el).html('')
-    name = $('input[name="player_name"]').val()
-    name = prompt("What is your name?") while name == ''
-
+    name = @.$('input[name="player_name"]').val() || 'Player'
     window.game = new Peacemission.Models.Game
-      player: new Peacemission.Models.Player({name: name})
-    new Peacemission.Views.Game.Main
+    game.player = new Peacemission.Models.Player({name: name})
+    game.view = new Peacemission.Views.Game.Main
+    

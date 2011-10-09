@@ -6,7 +6,7 @@ class Peacemission.Views.Game.Main extends Backbone.View
 
   initialize: () ->
     @.render()
-    new Peacemission.Views.Player.Stats
+    @.navigation = new Peacemission.Views.Game.Navigation()
     # start the game loop
 
   render: ->

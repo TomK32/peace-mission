@@ -8,7 +8,6 @@ module Jasmine
     def js_files(spec_filter = nil)
       # Convert all .coffee files into .js files before putting them in a script tag
       old_js_files(spec_filter).map do |filename|
-        puts filename 
         filename.sub(/\.coffee/, '')
       end
     end
@@ -29,7 +28,6 @@ module Jasmine
           env.append_path 'lib/javascripts'
           env.append_path 'spec/javascripts'
         end
-        puts assets.inspect
         map(config.spec_path) { run assets }
         map('/javascripts') { run assets }
         map '/' do
